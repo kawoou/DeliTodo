@@ -1,0 +1,1265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B1A361EC54886A51771D686DD54D8F /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495861CF7E52DFF69DE3E8284A2418E /* Credential.swift */; };
+		03D29778A54E224EA4D59285BFFECD0A /* ToastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180F0E61980D63C7CC3AFCB3BFF9F50 /* ToastService.swift */; };
+		04A16FB54C5E3507FC00724746F55250 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC50BD875DAE8A15AFB7171660AAB0 /* CommonError.swift */; };
+		04B0BEA610595038262E589B0B6CD360 /* TodoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F0EC567DC96EC76A785C62DFF404E /* TodoSection.swift */; };
+		052AEA534C9A103452393D7B2ACD41ED /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4F63BC5EFC470540D9C9D86F512D7 /* Realm.framework */; };
+		0646360EE1A6C3D4E4699F691AAF890A /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A9AF7E2EB9FBDC988F3DC43B432 /* MainNavigationViewController.swift */; };
+		0B04E5D1E30645F4FC8AC12ADB85B681 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7260BE875FD0A1C163D1F8300DAE32E /* MoreViewController.swift */; };
+		0B1D54D17403D36F32568BF71E287C83 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FA6F3C40A67582F3E368C181619DF /* TodoRepository.swift */; };
+		0B248F4BB882A46840FEA2553F1DA1B2 /* SyncTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB0882326E21ACA26FD4F2A7F87D713 /* SyncTodoTests.swift */; };
+		0DCF70EAD5DC1E7BB1322750653F6099 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF2A3D80AEC35A7FDDE75F420A332D /* ToastView.swift */; };
+		125BC73B801CF03AD3C9DBC420085005 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0E654F5CCA86B1E99B528F2678E82E /* RxCocoa.framework */; };
+		168371400B1046875DE6EA11F9E52B10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D55E83FC8D29A87F52EC41271F0FDC /* LoginViewController.swift */; };
+		16DEB9312ACC2AA4A289FCB5B7A6F1F8 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FD4708AF3092CB8B0DD69AB84BA988 /* AddTodoViewController.swift */; };
+		1763EA39FA5063587972C78A549B107F /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257716A8236772D154E9E2F0EE9C092C /* TodoCell.swift */; };
+		18E0E7A6279E620D2D165B314585957A /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E022FF9CB703D2C7A0E750DBE9F9CC87 /* MarqueeLabelSwift.framework */; };
+		19531137434E6ADC4CE3DF1BDBCA25C9 /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B9ED93CD18070FDB9E866494B4B130 /* NotificationBanner.framework */; };
+		1B72D7656E67F87F1C2B5D6FB39C10E0 /* TodoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFD45E460851E6C8941D588342DF8E /* TodoTable.swift */; };
+		1EC4B63A802BFDC54B363AE01BDD79B1 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F558CAEFBF4F87376AC7776BFDB8C /* Assets.swift */; };
+		20AC8AF665DCF3C972DF5AD0D0EDCB6E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85E1310E33F5902A556709B524AC175 /* RxBlocking.framework */; };
+		22200750F1E49BA441086D4D27ECF259 /* MoreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3236C7A2EFD7837870D1B046F5D77C /* MoreSection.swift */; };
+		229BAA1BC50EB1CCCE6D526A2C5B8788 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7EBE5D0D1057B91CD2C1A82EC10AF0 /* SplashViewController.swift */; };
+		301793429F59DB9A482010FB4268E07F /* RxSchedulerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69CACBB58317F13E7D21F346FABAC41 /* RxSchedulerConfiguration.swift */; };
+		34C4750B262B6663EE45AE2767B0BFEC /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56060829FA112E1C3B849551986767B0 /* TodoViewController.swift */; };
+		38E07E66D7D62E9684C98A2C2DEA745A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67EDBD26B6F9138424C9C3808CDA24 /* Todo.swift */; };
+		3C9ED77183503D9E0ED8DF4A325C122B /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A5DA746A7D22E7EA33513253271BC9 /* RealmConfiguration.swift */; };
+		4033F1AEC6E4F212AB72A3FE6EBA4FED /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD90A63CE27AA126362ADB88E4ADFA74 /* Launch Screen.storyboard */; };
+		413D4B90B2CA3030CC634970C5563E49 /* FabricConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00EC2C8C115EBF2EE1B216CB0CA685C /* FabricConfiguration.swift */; };
+		44F3C75332F191759D814B5447D26D0A /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8A1F4ACE1F5C290C357A5BA84C526 /* Navigator.swift */; };
+		456E251F47AF93DA30BDBB6A81A3AAE4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B91FA22E4065A1C971C5ABC07A04A24 /* RxSwift.framework */; };
+		4DEFF329CEC76AED0707AA75F5B3100B /* ToastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4F42FD5F67A670A34533EAB4AB23B /* ToastServiceImpl.swift */; };
+		51870E3E614E5526C09A0BFA01837B2A /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E7AB40395F1A8DBE91C42AD1DF2BD8 /* TodoService.swift */; };
+		5316375EB97EF268D691D167662620F4 /* FirebaseDatabase+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003957E67A86BE80B0EFAACDD3ED47E /* FirebaseDatabase+Rx.swift */; };
+		59078E2182D7DED8FCD43F135EEC5F08 /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6835A9E050DBB4DE7AEE4C8491C12750 /* UIColor+Image.swift */; };
+		5B1595956AB4CD37C688F7EAEC249223 /* Pods_DeliTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD5ECA1365E936F96178F0CC305DA99 /* Pods_DeliTodoTests.framework */; };
+		5E468D5620F57CD361BA03805C9B5C02 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5B1CA104F7520C5A4075EBB2D4EA7 /* Toast.swift */; };
+		5E55008DD6E62F56A837BF3648AA4A99 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D5C3512B14ECCF69B1912EB61E019 /* SyncService.swift */; };
+		62A5FECC9DD9683F9FCAEDF2D9CED4BF /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D391302C9AD0F3162203BDF7CA3B3AC8 /* SwipeCellKit.framework */; };
+		63DE62DCDABD2DD65C2561719DB9AB44 /* TodoServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908C2A83153B454B06B6C67AA94EF9D2 /* TodoServiceImpl.swift */; };
+		6C723B4AE140D488A9F4A1DA6E69732C /* WindowConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD740554694A7370E5C046C458846D /* WindowConfiguration.swift */; };
+		6FDF77C9FF5FE9AF85D1E1FA2EB0EFC8 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F983829AEDB2DFDEA46CE6036DDEB279 /* AnalyticsEvent.swift */; };
+		728D70450BCF685E70CE7BAE949A836F /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35240B3A354F230785A996EF8F66B1 /* SplashViewReactor.swift */; };
+		7A5A3C2438685387107CBC1D73765D56 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75274701A30907F9AEBE3BD40067931 /* UIViewController+Rx.swift */; };
+		7BAFAEEB1F86EA9C4CF30536F568EB79 /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BADFA6A664C6C9BEDD2E3F0480AFC6 /* TextFieldEffects.framework */; };
+		7D6293B52D396899939EAF2B7205530E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA8613D8A419CA6B99F8D8373F80F7 /* User.swift */; };
+		8D062FBF541874F1EB0C160487D80A15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C27AA9EAC068BB3A3B394159E91E6 /* GoogleService-Info.plist */; };
+		937481A145D5F88727B4D6811D097C2B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B91FA22E4065A1C971C5ABC07A04A24 /* RxSwift.framework */; };
+		940751CDDE1A01C51F20442D9484EDC5 /* Pods_DeliTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA240C3316DEF033D80C810F9604FF99 /* Pods_DeliTodo.framework */; };
+		98091D3C25F334A944005356112381AD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BF16E0D6DFB49B2925E57AEB5C85F /* Logger.swift */; };
+		994EDCAA9F2F64A51319C838F1E966E9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D439B287E5EFB71B550BCB0215F7145E /* RealmSwift.framework */; };
+		9A89567738209C6420A81ED1B3FBD987 /* MainNavigationViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDCDF100AA48D807BF18CEE46D3FBC /* MainNavigationViewReactor.swift */; };
+		9D108488EEF6ABDAC2CCFA3E3CD0018B /* NavigatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B5026BB3128EAC46148374F618B940 /* NavigatorImpl.swift */; };
+		9F0C9A053D11F6A9936AB662B388BA6F /* SignUpViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C6B45E11603F0ADC4C3099E1D221C5 /* SignUpViewReactor.swift */; };
+		A09992E079224DC2C19BEDC1B99D5621 /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859ACA4A11FED4D4E222B4FA6CA1C43C /* ToastViewController.swift */; };
+		A15D3709A8B256F4D564D2B65691BDB2 /* RxValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4E8C5CD675263C688FEB1F98EE6907 /* RxValidator.framework */; };
+		A2EF61FF8D9F41D8BBF7FE24D6B44812 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2E749159167D88E3F73375F39AD61A /* SnapKit.framework */; };
+		A41494AD920E99623FE607A4973D4351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF670BD0549B70E9881EB389FEC98DA /* AppDelegate.swift */; };
+		A6451039CBF8BED44725F919873EDADA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A45DF3695C14987316DE0EA8EBE64F /* AuthService.swift */; };
+		A9B85D890172A7B050F5352627AF25AB /* UniqueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FD5692585051880C8A81FC504DA51 /* UniqueManager.swift */; };
+		AC0AECA5BFA10ACDD784433E6A8891F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CDA8EF439FCD59C4A7B12DBA0C78F0 /* Assets.xcassets */; };
+		ACB55759229107C0677B8F5A7473767E /* Realm+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98444D2D158AE87C30515C330E3899 /* Realm+Rx.swift */; };
+		B17EA7A1D12803D764F5B31CF1D7DF0F /* RealmTodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ADE3C00ABE116E1CA61E051A3CA20F /* RealmTodoRepositoryImpl.swift */; };
+		B3F31BF106AF3B1A2B69D3E2990F66FD /* FirebaseAuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC308112D3ABE4F59DCB5118339950 /* FirebaseAuthServiceImpl.swift */; };
+		B688D1C098994DDCF7B33C48C0E41C8A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0E654F5CCA86B1E99B528F2678E82E /* RxCocoa.framework */; };
+		B88AEEF4B6DAA0962EBE7B83C02C4ED4 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CAC2A49758B900EF388A928B50D5FD /* SwiftyBeaver.framework */; };
+		BD4BCCB01AF687454B6447C43CB0A37F /* AnalyticsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BEB3602912F74A110AF68034B17AD9 /* AnalyticsConfiguration.swift */; };
+		BEA88B3F1F5A930AE0DC5B32EBC81D60 /* NavigatorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6470DEC23847CE711154466F890CC /* NavigatorConfiguration.swift */; };
+		BFA02D902D4678F3CD6E0A82653BCDC9 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCC7AA5A21D2324D674947F1F66EE46 /* ReactorKit.framework */; };
+		BFBC3783334834CAB67057AA33789BB8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD8E08803427A18EE122009FCADAE3B /* Quick.framework */; };
+		C01130845E0DA75FFE8E7C3B0EDA032C /* DeliFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E4FC7CEE86EC64072A36758E10027 /* DeliFactory.swift */; };
+		C1EDE0AD48E8D09CA4D23AB26578799C /* TodoSyncServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC050F2137665D6404E2A20F1FD7FAD /* TodoSyncServiceImpl.swift */; };
+		C5100A3B4EA7D8762BBA998761D7043F /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EAAF6325B6F1562BC0B799458261FD /* Differentiator.framework */; };
+		C55A09CC620F0E5A2CE2C23FF464242C /* TodoViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3896C93A9C6BAF5B202EC48E0CD4B /* TodoViewReactor.swift */; };
+		C809E46D4F7381D5CE01D5E452C67AAD /* DeepLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC648E5FF7A29563984ABBD7A9158FFD /* DeepLinkKit.framework */; };
+		C95F4814554ABAA83BD0832205A800CC /* FirebaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D2C572963FEC1986941768782480E /* FirebaseConfiguration.swift */; };
+		CD420638435137C6C8EB7C710FC37746 /* Gradients.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9AF190B8959C6F81B2F40F0371191B /* Gradients.framework */; };
+		CF1A0F3693F24553ACB7C753F342AFD4 /* MoreViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E757002B8194ECDDB041DE20B4A457 /* MoreViewReactor.swift */; };
+		D539B7CAE5F7FE22411683C2D9226CD8 /* FirebaseTodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F427A29A141733ED80416C927D7C26 /* FirebaseTodoRepositoryImpl.swift */; };
+		D6834096C5826BC968EB8631EB533AB4 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA4DD11FA0D5B30CA5D36ED60AC888B /* RxOptional.framework */; };
+		D92E14FF26A98B34CE73C18E616724AD /* AddTodoViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C02E726AE57D1624A8AB6F3D2AAA3 /* AddTodoViewReactor.swift */; };
+		DE9B211FB92B7F4B0BF1CA68297664BB /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4B39EC54C1BEC996FCA722638A1F1 /* LoginViewReactor.swift */; };
+		E07D8516C77B06FBE997A249263C8DA3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5B8EE2712283554E6A42641E79F8C12 /* Settings.bundle */; };
+		E0BA0162AFD7FCED881982440A0AD912 /* FirebaseAuth+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333E0C19F2A6CE25596B67510FCC18CA /* FirebaseAuth+Rx.swift */; };
+		E23D8F5B34497F79B6148C0916C7B427 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77923CFB65DC41D1978F4172D2DBC0D5 /* Nimble.framework */; };
+		E95582D005D9CEB1EE0FED6A42614A21 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6E337D8FB7166D7C03F99FAB03DE26 /* RxDataSources.framework */; };
+		EAF6E481964B5BAAFB9D282C68821ABD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE142DCCF5A2E99F9B6CF83F5A8C253 /* SignUpViewController.swift */; };
+		EEC6A61A7CC103AC33B2924B21E0B564 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4400EDC07CD04169A65230F5799484 /* ReactorKitRuntime.framework */; };
+		F049E7B4384716DB8833106B4426A12E /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B607A47BD228868353747AAE0267F70 /* MoreCell.swift */; };
+		F1CC25CFE6942E40C8A696315F1FCA31 /* MoreCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917A7022714B817E4FD0813A8A1728C /* MoreCellReactor.swift */; };
+		F6788ECC3B7FFF116B6C6108683C81C6 /* ToastViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118709C07EF4F8F85FFC485C00555168 /* ToastViewReactor.swift */; };
+		F99D9CD506B89AEAAE3CE1A91AF9C32A /* TodoCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBD2A4665EC80921C66018868D1A81 /* TodoCellReactor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF20BB65BCBAB2194CD3138855B8C9B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE502EC32BB0EFB857C8C8C4E6DA211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF3643F3F773F632A60299E5F9352C4;
+			remoteInfo = SyncTodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0673CD5F0475A5CE9CEAE6F95F0A6856 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118709C07EF4F8F85FFC485C00555168 /* ToastViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastViewReactor.swift; sourceTree = "<group>"; };
+		14B5026BB3128EAC46148374F618B940 /* NavigatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorImpl.swift; sourceTree = "<group>"; };
+		1B6E337D8FB7166D7C03F99FAB03DE26 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		216F1CFEBA737E49AE7EE89EC7562C5B /* DeliTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		233758B860C5793DAA8D1575B8DDD7A0 /* Pods-DeliTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliTodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeliTodo/Pods-DeliTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		257716A8236772D154E9E2F0EE9C092C /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		26FD740554694A7370E5C046C458846D /* WindowConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowConfiguration.swift; sourceTree = "<group>"; };
+		333E0C19F2A6CE25596B67510FCC18CA /* FirebaseAuth+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseAuth+Rx.swift"; sourceTree = "<group>"; };
+		349F558CAEFBF4F87376AC7776BFDB8C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		34CAB168FB66C2486D079FD95BD88FA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CDA8EF439FCD59C4A7B12DBA0C78F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E2E749159167D88E3F73375F39AD61A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		42FDCDF100AA48D807BF18CEE46D3FBC /* MainNavigationViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewReactor.swift; sourceTree = "<group>"; };
+		435FD5692585051880C8A81FC504DA51 /* UniqueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueManager.swift; sourceTree = "<group>"; };
+		43EAAF6325B6F1562BC0B799458261FD /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
+		4495861CF7E52DFF69DE3E8284A2418E /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		457D2C572963FEC1986941768782480E /* FirebaseConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConfiguration.swift; sourceTree = "<group>"; };
+		46BEB3602912F74A110AF68034B17AD9 /* AnalyticsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsConfiguration.swift; sourceTree = "<group>"; };
+		4B4E8C5CD675263C688FEB1F98EE6907 /* RxValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxValidator.framework; path = Carthage/Build/iOS/RxValidator.framework; sourceTree = "<group>"; };
+		4B8FA6F3C40A67582F3E368C181619DF /* TodoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		519D5C3512B14ECCF69B1912EB61E019 /* SyncService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		52E757002B8194ECDDB041DE20B4A457 /* MoreViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewReactor.swift; sourceTree = "<group>"; };
+		53A45DF3695C14987316DE0EA8EBE64F /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		54EC308112D3ABE4F59DCB5118339950 /* FirebaseAuthServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthServiceImpl.swift; sourceTree = "<group>"; };
+		56060829FA112E1C3B849551986767B0 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		5AE142DCCF5A2E99F9B6CF83F5A8C253 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5C3236C7A2EFD7837870D1B046F5D77C /* MoreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSection.swift; sourceTree = "<group>"; };
+		5DA06AE1CDDF3B977A582EDA0707C6AA /* DeliTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCC7AA5A21D2324D674947F1F66EE46 /* ReactorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKit.framework; path = Carthage/Build/iOS/ReactorKit.framework; sourceTree = "<group>"; };
+		6180F0E61980D63C7CC3AFCB3BFF9F50 /* ToastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastService.swift; sourceTree = "<group>"; };
+		625E4FC7CEE86EC64072A36758E10027 /* DeliFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliFactory.swift; sourceTree = "<group>"; };
+		6835A9E050DBB4DE7AEE4C8491C12750 /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
+		77923CFB65DC41D1978F4172D2DBC0D5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		7AA8A1F4ACE1F5C290C357A5BA84C526 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		83BADFA6A664C6C9BEDD2E3F0480AFC6 /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = Carthage/Build/iOS/TextFieldEffects.framework; sourceTree = "<group>"; };
+		84B4F63BC5EFC470540D9C9D86F512D7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		859ACA4A11FED4D4E222B4FA6CA1C43C /* ToastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
+		86F427A29A141733ED80416C927D7C26 /* FirebaseTodoRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseTodoRepositoryImpl.swift; sourceTree = "<group>"; };
+		8917A7022714B817E4FD0813A8A1728C /* MoreCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCellReactor.swift; sourceTree = "<group>"; };
+		8B9AF190B8959C6F81B2F40F0371191B /* Gradients.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gradients.framework; path = Carthage/Build/iOS/Gradients.framework; sourceTree = "<group>"; };
+		8B9C27AA9EAC068BB3A3B394159E91E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DA9E08305FE1025EB4417ED6DFA8558 /* Pods-DeliTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliTodoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeliTodoTests/Pods-DeliTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		908C2A83153B454B06B6C67AA94EF9D2 /* TodoServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoServiceImpl.swift; sourceTree = "<group>"; };
+		95A36A97216652D6642FD0F71813228B /* Pods-DeliTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliTodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeliTodo/Pods-DeliTodo.release.xcconfig"; sourceTree = "<group>"; };
+		9B607A47BD228868353747AAE0267F70 /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		9B91FA22E4065A1C971C5ABC07A04A24 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9DCFD45E460851E6C8941D588342DF8E /* TodoTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTable.swift; sourceTree = "<group>"; };
+		A0EF2A3D80AEC35A7FDDE75F420A332D /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		A2ADE3C00ABE116E1CA61E051A3CA20F /* RealmTodoRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTodoRepositoryImpl.swift; sourceTree = "<group>"; };
+		A3D55E83FC8D29A87F52EC41271F0FDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A66F0EC567DC96EC76A785C62DFF404E /* TodoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSection.swift; sourceTree = "<group>"; };
+		A7260BE875FD0A1C163D1F8300DAE32E /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		A85E1310E33F5902A556709B524AC175 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		A89697315E6558CBD8C204A901A5B6D2 /* Pods-DeliTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliTodoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeliTodoTests/Pods-DeliTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9E7AB40395F1A8DBE91C42AD1DF2BD8 /* TodoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		AD90A63CE27AA126362ADB88E4ADFA74 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B003957E67A86BE80B0EFAACDD3ED47E /* FirebaseDatabase+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseDatabase+Rx.swift"; sourceTree = "<group>"; };
+		B0FD4708AF3092CB8B0DD69AB84BA988 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		B5A6470DEC23847CE711154466F890CC /* NavigatorConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorConfiguration.swift; sourceTree = "<group>"; };
+		B74C02E726AE57D1624A8AB6F3D2AAA3 /* AddTodoViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewReactor.swift; sourceTree = "<group>"; };
+		BAC050F2137665D6404E2A20F1FD7FAD /* TodoSyncServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoSyncServiceImpl.swift; sourceTree = "<group>"; };
+		BC35240B3A354F230785A996EF8F66B1 /* SplashViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
+		BCE4B39EC54C1BEC996FCA722638A1F1 /* LoginViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
+		BEF670BD0549B70E9881EB389FEC98DA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4B9ED93CD18070FDB9E866494B4B130 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
+		C5CAC2A49758B900EF388A928B50D5FD /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		C75274701A30907F9AEBE3BD40067931 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		C7A5DA746A7D22E7EA33513253271BC9 /* RealmConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
+		C7FBD2A4665EC80921C66018868D1A81 /* TodoCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCellReactor.swift; sourceTree = "<group>"; };
+		CB8BF16E0D6DFB49B2925E57AEB5C85F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CCB0882326E21ACA26FD4F2A7F87D713 /* SyncTodoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTodoTests.swift; sourceTree = "<group>"; };
+		CEA3896C93A9C6BAF5B202EC48E0CD4B /* TodoViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewReactor.swift; sourceTree = "<group>"; };
+		CEA61A9AF7E2EB9FBDC988F3DC43B432 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		D00EC2C8C115EBF2EE1B216CB0CA685C /* FabricConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricConfiguration.swift; sourceTree = "<group>"; };
+		D391302C9AD0F3162203BDF7CA3B3AC8 /* SwipeCellKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeCellKit.framework; path = Carthage/Build/iOS/SwipeCellKit.framework; sourceTree = "<group>"; };
+		D439B287E5EFB71B550BCB0215F7145E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		D4AC50BD875DAE8A15AFB7171660AAB0 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		DA240C3316DEF033D80C810F9604FF99 /* Pods_DeliTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA4DD11FA0D5B30CA5D36ED60AC888B /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
+		DBD5B1CA104F7520C5A4075EBB2D4EA7 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		DCD5ECA1365E936F96178F0CC305DA99 /* Pods_DeliTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE67EDBD26B6F9138424C9C3808CDA24 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		E022FF9CB703D2C7A0E750DBE9F9CC87 /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
+		E5B8EE2712283554E6A42641E79F8C12 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		E5C6B45E11603F0ADC4C3099E1D221C5 /* SignUpViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewReactor.swift; sourceTree = "<group>"; };
+		EA98444D2D158AE87C30515C330E3899 /* Realm+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Rx.swift"; sourceTree = "<group>"; };
+		ECD4F42FD5F67A670A34533EAB4AB23B /* ToastServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastServiceImpl.swift; sourceTree = "<group>"; };
+		EF4400EDC07CD04169A65230F5799484 /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
+		F69CACBB58317F13E7D21F346FABAC41 /* RxSchedulerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSchedulerConfiguration.swift; sourceTree = "<group>"; };
+		F7CA8613D8A419CA6B99F8D8373F80F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F983829AEDB2DFDEA46CE6036DDEB279 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		FAD8E08803427A18EE122009FCADAE3B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		FC648E5FF7A29563984ABBD7A9158FFD /* DeepLinkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepLinkKit.framework; path = Carthage/Build/iOS/DeepLinkKit.framework; sourceTree = "<group>"; };
+		FE0E654F5CCA86B1E99B528F2678E82E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FF7EBE5D0D1057B91CD2C1A82EC10AF0 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E96D0D5BA6CEE216DD10AE1945D79B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23D8F5B34497F79B6148C0916C7B427 /* Nimble.framework in Frameworks */,
+				5B1595956AB4CD37C688F7EAEC249223 /* Pods_DeliTodoTests.framework in Frameworks */,
+				BFBC3783334834CAB67057AA33789BB8 /* Quick.framework in Frameworks */,
+				20AC8AF665DCF3C972DF5AD0D0EDCB6E /* RxBlocking.framework in Frameworks */,
+				B688D1C098994DDCF7B33C48C0E41C8A /* RxCocoa.framework in Frameworks */,
+				937481A145D5F88727B4D6811D097C2B /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17CFA74C3EB17B27E8418625C57DD87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C809E46D4F7381D5CE01D5E452C67AAD /* DeepLinkKit.framework in Frameworks */,
+				C5100A3B4EA7D8762BBA998761D7043F /* Differentiator.framework in Frameworks */,
+				CD420638435137C6C8EB7C710FC37746 /* Gradients.framework in Frameworks */,
+				18E0E7A6279E620D2D165B314585957A /* MarqueeLabelSwift.framework in Frameworks */,
+				19531137434E6ADC4CE3DF1BDBCA25C9 /* NotificationBanner.framework in Frameworks */,
+				940751CDDE1A01C51F20442D9484EDC5 /* Pods_DeliTodo.framework in Frameworks */,
+				BFA02D902D4678F3CD6E0A82653BCDC9 /* ReactorKit.framework in Frameworks */,
+				EEC6A61A7CC103AC33B2924B21E0B564 /* ReactorKitRuntime.framework in Frameworks */,
+				052AEA534C9A103452393D7B2ACD41ED /* Realm.framework in Frameworks */,
+				994EDCAA9F2F64A51319C838F1E966E9 /* RealmSwift.framework in Frameworks */,
+				125BC73B801CF03AD3C9DBC420085005 /* RxCocoa.framework in Frameworks */,
+				E95582D005D9CEB1EE0FED6A42614A21 /* RxDataSources.framework in Frameworks */,
+				D6834096C5826BC968EB8631EB533AB4 /* RxOptional.framework in Frameworks */,
+				456E251F47AF93DA30BDBB6A81A3AAE4 /* RxSwift.framework in Frameworks */,
+				A15D3709A8B256F4D564D2B65691BDB2 /* RxValidator.framework in Frameworks */,
+				A2EF61FF8D9F41D8BBF7FE24D6B44812 /* SnapKit.framework in Frameworks */,
+				B88AEEF4B6DAA0962EBE7B83C02C4ED4 /* SwiftyBeaver.framework in Frameworks */,
+				62A5FECC9DD9683F9FCAEDF2D9CED4BF /* SwipeCellKit.framework in Frameworks */,
+				7BAFAEEB1F86EA9C4CF30536F568EB79 /* TextFieldEffects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A9EFB642FCF610CE63A79E74E84307 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F983829AEDB2DFDEA46CE6036DDEB279 /* AnalyticsEvent.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		0C7CB30673FAF562E4BCEA28566D0C33 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9DCFD45E460851E6C8941D588342DF8E /* TodoTable.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		0E97F61C4D70682E4839F985CA35C9C6 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				46BEB3602912F74A110AF68034B17AD9 /* AnalyticsConfiguration.swift */,
+				D00EC2C8C115EBF2EE1B216CB0CA685C /* FabricConfiguration.swift */,
+				457D2C572963FEC1986941768782480E /* FirebaseConfiguration.swift */,
+				B5A6470DEC23847CE711154466F890CC /* NavigatorConfiguration.swift */,
+				C7A5DA746A7D22E7EA33513253271BC9 /* RealmConfiguration.swift */,
+				F69CACBB58317F13E7D21F346FABAC41 /* RxSchedulerConfiguration.swift */,
+				26FD740554694A7370E5C046C458846D /* WindowConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		152B86E344200C2A6E5E8966946FB006 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34CAB168FB66C2486D079FD95BD88FA3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19BEA8DF21F636406F2ACFF98F8E0FDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38CDA8EF439FCD59C4A7B12DBA0C78F0 /* Assets.xcassets */,
+				AD90A63CE27AA126362ADB88E4ADFA74 /* Launch Screen.storyboard */,
+				E5B8EE2712283554E6A42641E79F8C12 /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2313C352E778329C733144B7B5BFB92F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B607A47BD228868353747AAE0267F70 /* MoreCell.swift */,
+				8917A7022714B817E4FD0813A8A1728C /* MoreCellReactor.swift */,
+				A0EF2A3D80AEC35A7FDDE75F420A332D /* ToastView.swift */,
+				257716A8236772D154E9E2F0EE9C092C /* TodoCell.swift */,
+				C7FBD2A4665EC80921C66018868D1A81 /* TodoCellReactor.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		327FCBF762B67E48E544184AF095AAC6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD4708AF3092CB8B0DD69AB84BA988 /* AddTodoViewController.swift */,
+				B74C02E726AE57D1624A8AB6F3D2AAA3 /* AddTodoViewReactor.swift */,
+				A3D55E83FC8D29A87F52EC41271F0FDC /* LoginViewController.swift */,
+				BCE4B39EC54C1BEC996FCA722638A1F1 /* LoginViewReactor.swift */,
+				CEA61A9AF7E2EB9FBDC988F3DC43B432 /* MainNavigationViewController.swift */,
+				42FDCDF100AA48D807BF18CEE46D3FBC /* MainNavigationViewReactor.swift */,
+				A7260BE875FD0A1C163D1F8300DAE32E /* MoreViewController.swift */,
+				52E757002B8194ECDDB041DE20B4A457 /* MoreViewReactor.swift */,
+				5AE142DCCF5A2E99F9B6CF83F5A8C253 /* SignUpViewController.swift */,
+				E5C6B45E11603F0ADC4C3099E1D221C5 /* SignUpViewReactor.swift */,
+				FF7EBE5D0D1057B91CD2C1A82EC10AF0 /* SplashViewController.swift */,
+				BC35240B3A354F230785A996EF8F66B1 /* SplashViewReactor.swift */,
+				859ACA4A11FED4D4E222B4FA6CA1C43C /* ToastViewController.swift */,
+				118709C07EF4F8F85FFC485C00555168 /* ToastViewReactor.swift */,
+				56060829FA112E1C3B849551986767B0 /* TodoViewController.swift */,
+				CEA3896C93A9C6BAF5B202EC48E0CD4B /* TodoViewReactor.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		39F25E3A2484164DF2CA3C713B31774C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0E97F61C4D70682E4839F985CA35C9C6 /* Configurations */,
+				4B4098BA618FC5D3B4E32C27EB2669D7 /* Cores */,
+				F81AF86C0428FE1FDE226DC39008AE34 /* Errors */,
+				6278E1AE771170D504A9C1788A836CF9 /* Extensions */,
+				48726E8D69F372DD880B8E794501EF9B /* Models */,
+				3DA905142B21291BCAF9E7758390F3AA /* Repositories */,
+				8BA377F5C868B087079B817AEDB15100 /* Sections */,
+				815EFCCBF77A18A0AB3E6F269C147629 /* Services */,
+				947D9FA3BA99821A3636D434F3FEF807 /* Types */,
+				327FCBF762B67E48E544184AF095AAC6 /* ViewControllers */,
+				2313C352E778329C733144B7B5BFB92F /* Views */,
+				BEF670BD0549B70E9881EB389FEC98DA /* AppDelegate.swift */,
+				349F558CAEFBF4F87376AC7776BFDB8C /* Assets.swift */,
+				625E4FC7CEE86EC64072A36758E10027 /* DeliFactory.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3DA905142B21291BCAF9E7758390F3AA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8035C8F45461DD4E5756299E0C993 /* Impl */,
+				4B8FA6F3C40A67582F3E368C181619DF /* TodoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		48726E8D69F372DD880B8E794501EF9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C7CB30673FAF562E4BCEA28566D0C33 /* Realm */,
+				4495861CF7E52DFF69DE3E8284A2418E /* Credential.swift */,
+				DBD5B1CA104F7520C5A4075EBB2D4EA7 /* Toast.swift */,
+				DE67EDBD26B6F9138424C9C3808CDA24 /* Todo.swift */,
+				F7CA8613D8A419CA6B99F8D8373F80F7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B4098BA618FC5D3B4E32C27EB2669D7 /* Cores */ = {
+			isa = PBXGroup;
+			children = (
+				08A9EFB642FCF610CE63A79E74E84307 /* Analytics */,
+				723A504F393A6016EA6F235D881C2C28 /* Logging */,
+				AC15EBAD61F831D867E6DDC9FFAC19C3 /* Navigating */,
+				435FD5692585051880C8A81FC504DA51 /* UniqueManager.swift */,
+			);
+			path = Cores;
+			sourceTree = "<group>";
+		};
+		5DE04C31D67FCBD21E38EDA9E22EA4F2 = {
+			isa = PBXGroup;
+			children = (
+				BE900090BFBA0DBD688E5C4191126969 /* DeliTodo */,
+				9FAD323E6C7030D73D131490BD3A4C3A /* DeliTodoTests */,
+				D2EDA13208439BDAAC48ED4C655384FE /* Frameworks */,
+				B9A1705B3F7E71C8A2B794771B653057 /* Pods */,
+				9602F295B66F748FE686117F95B470DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6278E1AE771170D504A9C1788A836CF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4188E94A1F4D670F5F5BFE83E2E9B /* Rx */,
+				6835A9E050DBB4DE7AEE4C8491C12750 /* UIColor+Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C3B687CE6BB96B88B4C29D08F2C77F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		723A504F393A6016EA6F235D881C2C28 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				CB8BF16E0D6DFB49B2925E57AEB5C85F /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		815EFCCBF77A18A0AB3E6F269C147629 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F383B0D5A079266D8E1BF16E404C03B2 /* Impl */,
+				53A45DF3695C14987316DE0EA8EBE64F /* AuthService.swift */,
+				519D5C3512B14ECCF69B1912EB61E019 /* SyncService.swift */,
+				6180F0E61980D63C7CC3AFCB3BFF9F50 /* ToastService.swift */,
+				A9E7AB40395F1A8DBE91C42AD1DF2BD8 /* TodoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8BA377F5C868B087079B817AEDB15100 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				5C3236C7A2EFD7837870D1B046F5D77C /* MoreSection.swift */,
+				A66F0EC567DC96EC76A785C62DFF404E /* TodoSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		947D9FA3BA99821A3636D434F3FEF807 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		9602F295B66F748FE686117F95B470DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				216F1CFEBA737E49AE7EE89EC7562C5B /* DeliTodo.app */,
+				5DA06AE1CDDF3B977A582EDA0707C6AA /* DeliTodoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD4188E94A1F4D670F5F5BFE83E2E9B /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				333E0C19F2A6CE25596B67510FCC18CA /* FirebaseAuth+Rx.swift */,
+				B003957E67A86BE80B0EFAACDD3ED47E /* FirebaseDatabase+Rx.swift */,
+				EA98444D2D158AE87C30515C330E3899 /* Realm+Rx.swift */,
+				C75274701A30907F9AEBE3BD40067931 /* UIViewController+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		F81AF86C0428FE1FDE226DC39008AE34 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC50BD875DAE8A15AFB7171660AAB0 /* CommonError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		9FAD323E6C7030D73D131490BD3A4C3A /* DeliTodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C3B687CE6BB96B88B4C29D08F2C77F6 /* Resources */,
+				D26C0202CDEE2D426E711978C4E4CEEB /* Sources */,
+				152B86E344200C2A6E5E8966946FB006 /* Supporting Files */,
+			);
+			path = DeliTodoTests;
+			sourceTree = "<group>";
+		};
+		AC15EBAD61F831D867E6DDC9FFAC19C3 /* Navigating */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9BC58B38E023EF5A4FE1AC4903D3A /* Impl */,
+				7AA8A1F4ACE1F5C290C357A5BA84C526 /* Navigator.swift */,
+			);
+			path = Navigating;
+			sourceTree = "<group>";
+		};
+		B9A1705B3F7E71C8A2B794771B653057 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				233758B860C5793DAA8D1575B8DDD7A0 /* Pods-DeliTodo.debug.xcconfig */,
+				95A36A97216652D6642FD0F71813228B /* Pods-DeliTodo.release.xcconfig */,
+				8DA9E08305FE1025EB4417ED6DFA8558 /* Pods-DeliTodoTests.debug.xcconfig */,
+				A89697315E6558CBD8C204A901A5B6D2 /* Pods-DeliTodoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE900090BFBA0DBD688E5C4191126969 /* DeliTodo */ = {
+			isa = PBXGroup;
+			children = (
+				19BEA8DF21F636406F2ACFF98F8E0FDC /* Resources */,
+				39F25E3A2484164DF2CA3C713B31774C /* Sources */,
+				C9D02805ED93656D9261F0AC639B51C5 /* Supporting Files */,
+			);
+			path = DeliTodo;
+			sourceTree = "<group>";
+		};
+		C9D02805ED93656D9261F0AC639B51C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C27AA9EAC068BB3A3B394159E91E6 /* GoogleService-Info.plist */,
+				0673CD5F0475A5CE9CEAE6F95F0A6856 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF9BC58B38E023EF5A4FE1AC4903D3A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				14B5026BB3128EAC46148374F618B940 /* NavigatorImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		D26C0202CDEE2D426E711978C4E4CEEB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CCB0882326E21ACA26FD4F2A7F87D713 /* SyncTodoTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D2EDA13208439BDAAC48ED4C655384FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC648E5FF7A29563984ABBD7A9158FFD /* DeepLinkKit.framework */,
+				43EAAF6325B6F1562BC0B799458261FD /* Differentiator.framework */,
+				8B9AF190B8959C6F81B2F40F0371191B /* Gradients.framework */,
+				E022FF9CB703D2C7A0E750DBE9F9CC87 /* MarqueeLabelSwift.framework */,
+				77923CFB65DC41D1978F4172D2DBC0D5 /* Nimble.framework */,
+				C4B9ED93CD18070FDB9E866494B4B130 /* NotificationBanner.framework */,
+				DA240C3316DEF033D80C810F9604FF99 /* Pods_DeliTodo.framework */,
+				DCD5ECA1365E936F96178F0CC305DA99 /* Pods_DeliTodoTests.framework */,
+				FAD8E08803427A18EE122009FCADAE3B /* Quick.framework */,
+				5FCC7AA5A21D2324D674947F1F66EE46 /* ReactorKit.framework */,
+				EF4400EDC07CD04169A65230F5799484 /* ReactorKitRuntime.framework */,
+				84B4F63BC5EFC470540D9C9D86F512D7 /* Realm.framework */,
+				D439B287E5EFB71B550BCB0215F7145E /* RealmSwift.framework */,
+				A85E1310E33F5902A556709B524AC175 /* RxBlocking.framework */,
+				FE0E654F5CCA86B1E99B528F2678E82E /* RxCocoa.framework */,
+				1B6E337D8FB7166D7C03F99FAB03DE26 /* RxDataSources.framework */,
+				DAA4DD11FA0D5B30CA5D36ED60AC888B /* RxOptional.framework */,
+				9B91FA22E4065A1C971C5ABC07A04A24 /* RxSwift.framework */,
+				4B4E8C5CD675263C688FEB1F98EE6907 /* RxValidator.framework */,
+				3E2E749159167D88E3F73375F39AD61A /* SnapKit.framework */,
+				C5CAC2A49758B900EF388A928B50D5FD /* SwiftyBeaver.framework */,
+				D391302C9AD0F3162203BDF7CA3B3AC8 /* SwipeCellKit.framework */,
+				83BADFA6A664C6C9BEDD2E3F0480AFC6 /* TextFieldEffects.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F383B0D5A079266D8E1BF16E404C03B2 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				54EC308112D3ABE4F59DCB5118339950 /* FirebaseAuthServiceImpl.swift */,
+				ECD4F42FD5F67A670A34533EAB4AB23B /* ToastServiceImpl.swift */,
+				908C2A83153B454B06B6C67AA94EF9D2 /* TodoServiceImpl.swift */,
+				BAC050F2137665D6404E2A20F1FD7FAD /* TodoSyncServiceImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		F8B8035C8F45461DD4E5756299E0C993 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				86F427A29A141733ED80416C927D7C26 /* FirebaseTodoRepositoryImpl.swift */,
+				A2ADE3C00ABE116E1CA61E051A3CA20F /* RealmTodoRepositoryImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5611865D58079215ABDA93C83CE36FDA /* DeliTodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FCD90449205AC6CB5C2D1B48C59D5F /* Build configuration list for PBXNativeTarget "DeliTodoTests" */;
+			buildPhases = (
+				A0330EA4F9AEBA05B290CA5B91B88A6D /* [CP] Check Pods Manifest.lock */,
+				247DE43EC180B160FB9BA5DCAD66B30D /* Sources */,
+				1E96D0D5BA6CEE216DD10AE1945D79B8 /* Frameworks */,
+				F326AC50F137945D292187CFEB41F0A7 /* Resources */,
+				2B594F23FA427B616B9C335DE2161D7C /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC07FAE27012E764A97B16EA1FEDD5F1 /* PBXTargetDependency */,
+			);
+			name = DeliTodoTests;
+			productName = SyncTodoTests;
+			productReference = 5DA06AE1CDDF3B977A582EDA0707C6AA /* DeliTodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACF3643F3F773F632A60299E5F9352C4 /* DeliTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212CA79C0AE16592EF5E3C7FC22C13BF /* Build configuration list for PBXNativeTarget "DeliTodo" */;
+			buildPhases = (
+				A413E7A0FBCE1D99BA6FCD5B343887D7 /* [CP] Check Pods Manifest.lock */,
+				93268D71E63339B841BB32D198BAAD9A /* Deli */,
+				AE384B71EE639D4C0F11A5415E6C25EB /* SwiftGen */,
+				3E7C9D458F494D714ED2C3185638125C /* SwiftLint */,
+				DF11FF3ADCB7B0BE24934A6B67F7C7AC /* Sources */,
+				F17CFA74C3EB17B27E8418625C57DD87 /* Frameworks */,
+				D743A361CA27EB4375F12B98CF07D48C /* LicensePlist */,
+				53C1983384D15C63D229EF62CE0E8AD7 /* Resources */,
+				1D160572D74881CFE1C0AB25900ECE2A /* Carthage */,
+				4938F982BA10FC0BB356108472E3DC34 /* [CP] Embed Pods Frameworks */,
+				DB62F843529A822DD6B59455DDB32233 /* Fabric */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliTodo;
+			productName = SyncTodo;
+			productReference = 216F1CFEBA737E49AE7EE89EC7562C5B /* DeliTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE502EC32BB0EFB857C8C8C4E6DA211F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Kawoou;
+				TargetAttributes = {
+					5611865D58079215ABDA93C83CE36FDA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ACF3643F3F773F632A60299E5F9352C4;
+					};
+					ACF3643F3F773F632A60299E5F9352C4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C8440C85F8E61F55065D54BC2E5F3B37 /* Build configuration list for PBXProject "DeliTodo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DE04C31D67FCBD21E38EDA9E22EA4F2;
+			productRefGroup = 9602F295B66F748FE686117F95B470DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACF3643F3F773F632A60299E5F9352C4 /* DeliTodo */,
+				5611865D58079215ABDA93C83CE36FDA /* DeliTodoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C1983384D15C63D229EF62CE0E8AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0AECA5BFA10ACDD784433E6A8891F9 /* Assets.xcassets in Resources */,
+				8D062FBF541874F1EB0C160487D80A15 /* GoogleService-Info.plist in Resources */,
+				4033F1AEC6E4F212AB72A3FE6EBA4FED /* Launch Screen.storyboard in Resources */,
+				E07D8516C77B06FBE997A249263C8DA3 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326AC50F137945D292187CFEB41F0A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D160572D74881CFE1C0AB25900ECE2A /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxOptional.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DeepLinkKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TextFieldEffects.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Gradients.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxValidator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		2B594F23FA427B616B9C335DE2161D7C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		3E7C9D458F494D714ED2C3185638125C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		93268D71E63339B841BB32D198BAAD9A /* Deli */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Deli;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/DeliBinary/deli\" \"build\"\n";
+		};
+		AE384B71EE639D4C0F11A5415E6C25EB /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
+		D743A361CA27EB4375F12B98CF07D48C /* LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = LicensePlist;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/LicensePlist/license-plist\" --output-path DeliTodo/Resources/Settings.bundle --github-token e8ad1e2fbaa2ec0ab3db6d98586c005a532fb12e\n";
+		};
+		DB62F843529A822DD6B59455DDB32233 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Fabric;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" f2a114aca89951eb5883f5afab7e6cff50b70214 eac6dacf40e2c8644efade2f7a3fe9f59ed0bc4a2e376fad3f25501ebd2d772e\n";
+		};
+		A0330EA4F9AEBA05B290CA5B91B88A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeliTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A413E7A0FBCE1D99BA6FCD5B343887D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeliTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4938F982BA10FC0BB356108472E3DC34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliTodo/Pods-DeliTodo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Deli/Deli.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Umbrella/Umbrella.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Deli.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Umbrella.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliTodo/Pods-DeliTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		247DE43EC180B160FB9BA5DCAD66B30D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B248F4BB882A46840FEA2553F1DA1B2 /* SyncTodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF11FF3ADCB7B0BE24934A6B67F7C7AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DEB9312ACC2AA4A289FCB5B7A6F1F8 /* AddTodoViewController.swift in Sources */,
+				D92E14FF26A98B34CE73C18E616724AD /* AddTodoViewReactor.swift in Sources */,
+				BD4BCCB01AF687454B6447C43CB0A37F /* AnalyticsConfiguration.swift in Sources */,
+				6FDF77C9FF5FE9AF85D1E1FA2EB0EFC8 /* AnalyticsEvent.swift in Sources */,
+				A41494AD920E99623FE607A4973D4351 /* AppDelegate.swift in Sources */,
+				1EC4B63A802BFDC54B363AE01BDD79B1 /* Assets.swift in Sources */,
+				A6451039CBF8BED44725F919873EDADA /* AuthService.swift in Sources */,
+				04A16FB54C5E3507FC00724746F55250 /* CommonError.swift in Sources */,
+				03B1A361EC54886A51771D686DD54D8F /* Credential.swift in Sources */,
+				C01130845E0DA75FFE8E7C3B0EDA032C /* DeliFactory.swift in Sources */,
+				413D4B90B2CA3030CC634970C5563E49 /* FabricConfiguration.swift in Sources */,
+				E0BA0162AFD7FCED881982440A0AD912 /* FirebaseAuth+Rx.swift in Sources */,
+				B3F31BF106AF3B1A2B69D3E2990F66FD /* FirebaseAuthServiceImpl.swift in Sources */,
+				C95F4814554ABAA83BD0832205A800CC /* FirebaseConfiguration.swift in Sources */,
+				5316375EB97EF268D691D167662620F4 /* FirebaseDatabase+Rx.swift in Sources */,
+				D539B7CAE5F7FE22411683C2D9226CD8 /* FirebaseTodoRepositoryImpl.swift in Sources */,
+				98091D3C25F334A944005356112381AD /* Logger.swift in Sources */,
+				168371400B1046875DE6EA11F9E52B10 /* LoginViewController.swift in Sources */,
+				DE9B211FB92B7F4B0BF1CA68297664BB /* LoginViewReactor.swift in Sources */,
+				0646360EE1A6C3D4E4699F691AAF890A /* MainNavigationViewController.swift in Sources */,
+				9A89567738209C6420A81ED1B3FBD987 /* MainNavigationViewReactor.swift in Sources */,
+				F049E7B4384716DB8833106B4426A12E /* MoreCell.swift in Sources */,
+				F1CC25CFE6942E40C8A696315F1FCA31 /* MoreCellReactor.swift in Sources */,
+				22200750F1E49BA441086D4D27ECF259 /* MoreSection.swift in Sources */,
+				0B04E5D1E30645F4FC8AC12ADB85B681 /* MoreViewController.swift in Sources */,
+				CF1A0F3693F24553ACB7C753F342AFD4 /* MoreViewReactor.swift in Sources */,
+				44F3C75332F191759D814B5447D26D0A /* Navigator.swift in Sources */,
+				BEA88B3F1F5A930AE0DC5B32EBC81D60 /* NavigatorConfiguration.swift in Sources */,
+				9D108488EEF6ABDAC2CCFA3E3CD0018B /* NavigatorImpl.swift in Sources */,
+				ACB55759229107C0677B8F5A7473767E /* Realm+Rx.swift in Sources */,
+				3C9ED77183503D9E0ED8DF4A325C122B /* RealmConfiguration.swift in Sources */,
+				B17EA7A1D12803D764F5B31CF1D7DF0F /* RealmTodoRepositoryImpl.swift in Sources */,
+				301793429F59DB9A482010FB4268E07F /* RxSchedulerConfiguration.swift in Sources */,
+				EAF6E481964B5BAAFB9D282C68821ABD /* SignUpViewController.swift in Sources */,
+				9F0C9A053D11F6A9936AB662B388BA6F /* SignUpViewReactor.swift in Sources */,
+				229BAA1BC50EB1CCCE6D526A2C5B8788 /* SplashViewController.swift in Sources */,
+				728D70450BCF685E70CE7BAE949A836F /* SplashViewReactor.swift in Sources */,
+				5E55008DD6E62F56A837BF3648AA4A99 /* SyncService.swift in Sources */,
+				5E468D5620F57CD361BA03805C9B5C02 /* Toast.swift in Sources */,
+				03D29778A54E224EA4D59285BFFECD0A /* ToastService.swift in Sources */,
+				4DEFF329CEC76AED0707AA75F5B3100B /* ToastServiceImpl.swift in Sources */,
+				0DCF70EAD5DC1E7BB1322750653F6099 /* ToastView.swift in Sources */,
+				A09992E079224DC2C19BEDC1B99D5621 /* ToastViewController.swift in Sources */,
+				F6788ECC3B7FFF116B6C6108683C81C6 /* ToastViewReactor.swift in Sources */,
+				38E07E66D7D62E9684C98A2C2DEA745A /* Todo.swift in Sources */,
+				1763EA39FA5063587972C78A549B107F /* TodoCell.swift in Sources */,
+				F99D9CD506B89AEAAE3CE1A91AF9C32A /* TodoCellReactor.swift in Sources */,
+				0B1D54D17403D36F32568BF71E287C83 /* TodoRepository.swift in Sources */,
+				04B0BEA610595038262E589B0B6CD360 /* TodoSection.swift in Sources */,
+				51870E3E614E5526C09A0BFA01837B2A /* TodoService.swift in Sources */,
+				63DE62DCDABD2DD65C2561719DB9AB44 /* TodoServiceImpl.swift in Sources */,
+				C1EDE0AD48E8D09CA4D23AB26578799C /* TodoSyncServiceImpl.swift in Sources */,
+				1B72D7656E67F87F1C2B5D6FB39C10E0 /* TodoTable.swift in Sources */,
+				34C4750B262B6663EE45AE2767B0BFEC /* TodoViewController.swift in Sources */,
+				C55A09CC620F0E5A2CE2C23FF464242C /* TodoViewReactor.swift in Sources */,
+				59078E2182D7DED8FCD43F135EEC5F08 /* UIColor+Image.swift in Sources */,
+				7A5A3C2438685387107CBC1D73765D56 /* UIViewController+Rx.swift in Sources */,
+				A9B85D890172A7B050F5352627AF25AB /* UniqueManager.swift in Sources */,
+				7D6293B52D396899939EAF2B7205530E /* User.swift in Sources */,
+				6C723B4AE140D488A9F4A1DA6E69732C /* WindowConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC07FAE27012E764A97B16EA1FEDD5F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF3643F3F773F632A60299E5F9352C4 /* DeliTodo */;
+			targetProxy = EF20BB65BCBAB2194CD3138855B8C9B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06C157C4F3F0829AD6EF8E374354E56A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233758B860C5793DAA8D1575B8DDD7A0 /* Pods-DeliTodo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/DeliTodo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.DeliTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16D3DC0DB43C8B33A29F0418DBEBD512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89697315E6558CBD8C204A901A5B6D2 /* Pods-DeliTodoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "DeliTodoTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.DeliTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliTodo.app/DeliTodo";
+			};
+			name = Release;
+		};
+		2BA0DA02BE06FAB9E33BDBBD1AA5DEC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45DE782C6A70602269790F1FB1FE1D4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		678494AE3B7FA727F17D677C07793FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A36A97216652D6642FD0F71813228B /* Pods-DeliTodo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/DeliTodo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.DeliTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ABD9B00B4D7C7D990ECD103E07CED1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA9E08305FE1025EB4417ED6DFA8558 /* Pods-DeliTodoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "DeliTodoTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.DeliTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliTodo.app/DeliTodo";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		212CA79C0AE16592EF5E3C7FC22C13BF /* Build configuration list for PBXNativeTarget "DeliTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C157C4F3F0829AD6EF8E374354E56A /* Debug */,
+				678494AE3B7FA727F17D677C07793FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FCD90449205AC6CB5C2D1B48C59D5F /* Build configuration list for PBXNativeTarget "DeliTodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD9B00B4D7C7D990ECD103E07CED1E4 /* Debug */,
+				16D3DC0DB43C8B33A29F0418DBEBD512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8440C85F8E61F55065D54BC2E5F3B37 /* Build configuration list for PBXProject "DeliTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA0DA02BE06FAB9E33BDBBD1AA5DEC9 /* Debug */,
+				45DE782C6A70602269790F1FB1FE1D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE502EC32BB0EFB857C8C8C4E6DA211F /* Project object */;
+}

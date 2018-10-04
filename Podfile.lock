@@ -1,0 +1,131 @@
+PODS:
+  - Crashlytics (3.10.9):
+    - Fabric (~> 1.7.13)
+  - Deli (0.5.0):
+    - DeliBinary (~> 0.5.0)
+  - DeliBinary (0.5.0)
+  - Fabric (1.7.13)
+  - FirebaseAnalytics (5.2.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.4):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.1.4):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.0.3):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (3.2.2):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - GoogleAppMeasurement (5.2.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.0)
+  - GoogleUtilities/Logger (5.3.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.0)"
+  - GoogleUtilities/Reachability (5.3.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.0):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.0)
+  - leveldb-library (1.20)
+  - LicensePlist (1.8.8)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - SwiftGen (6.0.1)
+  - SwiftLint (0.27.0)
+  - Umbrella (0.7.1):
+    - Umbrella/Core (= 0.7.1)
+  - Umbrella/Core (0.7.1)
+  - Umbrella/Firebase (0.7.1):
+    - Umbrella/Core
+
+DEPENDENCIES:
+  - Crashlytics
+  - Deli
+  - Fabric
+  - FirebaseAnalytics
+  - FirebaseAuth
+  - FirebaseCore
+  - FirebaseDatabase
+  - LicensePlist
+  - SwiftGen
+  - SwiftLint
+  - Umbrella
+  - Umbrella/Firebase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Deli
+    - DeliBinary
+    - Fabric
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - leveldb-library
+    - LicensePlist
+    - nanopb
+    - SwiftGen
+    - SwiftLint
+    - Umbrella
+
+SPEC CHECKSUMS:
+  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
+  Deli: 8e1bd6296b99a8823f7f51bd89b3c167dd86ea3e
+  DeliBinary: 151f478826a20f05075ad366571fcca2adbc8e18
+  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
+  FirebaseAuth: 504b198ceb3472dca5c65bb95544ea44cfc9439e
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 2a84b6b325792a4319ef71ee18819dcba08d2fd7
+  FirebaseDatabase: e2bcbc106adc4b11a2da3ec2eb63c0c4a44f2f54
+  FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
+  GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
+  GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  LicensePlist: c30d20e39985de8600cccda21096cfa98865483b
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftGen: 6b3ee807efa0231541a3777c9ed5c5d3130dfdfb
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  Umbrella: 90c8dea533add4a072dfd48fbc3a53f62c6e0716
+
+PODFILE CHECKSUM: 1c3dbb66107ebb0cb45e07d52693eaab82e1a0de
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,5 @@
+xcassets:
+  inputs: DeliTodo/Resources/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: DeliTodo/Sources/Assets.swift

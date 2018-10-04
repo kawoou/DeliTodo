@@ -1,0 +1,68 @@
+included:
+  - DeliTodo
+
+excluded:
+  - DeliTodo/Sources/DeliFactory.swift
+
+whitelist_rules:
+  - closing_brace
+  - closure_end_indentation
+  - closure_spacing
+  - contains_over_first_not_nil
+  - colon
+  - comma
+  - control_statement
+  - discarded_notification_center_observer
+  - empty_enum_arguments
+  - empty_parameters
+  - empty_parentheses_with_trailing_closure
+  - first_where
+  - for_where
+  - force_cast
+  - identifier_name
+  - leading_whitespace
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_nsgeometry_functions
+  - multiline_parameters
+  - opening_brace
+  - operator_usage_whitespace
+  - private_over_fileprivate
+  - redundant_discardable_let
+  - redundant_nil_coalescing
+  - redundant_void_return
+  - return_arrow_whitespace
+  - sorted_first_last
+  - syntactic_sugar
+  - trailing_semicolon
+  - vertical_whitespace
+  - void_return
+  - switch_case_on_newline
+  - let_var_whitespace
+
+identifier_name:
+  max_length:
+    warning: 61
+  excluded:
+    - id
+    - ID
+    - db
+    - i
+    - j
+    - ok
+    - no
+    - ss
+    - on
+    - qa
+    - to
+    - me
+    - s3
+    - qq
+    - x
+    - y
+    - z
+    - dx
+    - dy
+    - up
+    - of

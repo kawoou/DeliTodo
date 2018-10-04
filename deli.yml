@@ -1,0 +1,9 @@
+target:
+  - DeliTodo
+
+config:
+  DeliTodo:
+    project: DeliTodo
+    scheme: DeliTodo
+    className: DeliFactory
+    output: DeliTodo/Sources/DeliFactory.swift
