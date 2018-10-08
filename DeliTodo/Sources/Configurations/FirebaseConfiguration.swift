@@ -15,7 +15,10 @@ final class FirebaseConfiguration: Configuration {
     
     let firebase = Config(FirebaseApp.self, scope: .always) {
         FirebaseCore.FirebaseConfiguration.shared.setLoggerLevel(.warning)
-        FirebaseApp.configure()
+
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
         return FirebaseApp.app()!
     }
 

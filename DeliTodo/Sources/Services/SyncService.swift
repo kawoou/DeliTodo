@@ -6,6 +6,4 @@
 //  Copyright © 2018 Kawoou. All rights reserved.
 //
 
-protocol SyncService {
-    
-}
+protocol SyncService {}

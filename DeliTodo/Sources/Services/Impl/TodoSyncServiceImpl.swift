@@ -35,7 +35,11 @@ final class TodoSyncServiceImpl: SyncService, Autowired {
             }
             .flatMapLatest { [unowned self] users -> Observable<User> in
                 guard let user = users.1 else { return .empty() }
-                guard users.0 == nil else { return .just(user) }
+                guard users.0 == nil else {
+                    return self.localTodoRepository.clear(for: user)
+                        .asObservable()
+                        .map { user }
+                }
 
                 return self.remoteTodoRepository.gets(for: user)
                     .asObservable()
@@ -102,7 +106,7 @@ final class TodoSyncServiceImpl: SyncService, Autowired {
     }
     
     // MARK: - Lifecycle
-    
+
     required init(
         local localTodoRepository: TodoRepository,
         remote remoteTodoRepository: TodoRepository,

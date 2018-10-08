@@ -19,6 +19,25 @@ import Umbrella
 final class DeliFactory: ModuleFactory {
     override func load(context: AppContext) {
         register(
+            AddTodoViewController.self,
+            resolver: {
+                let _0 = context.get(AddTodoViewReactor.self, qualifier: "")!
+                return AddTodoViewController(_0)
+            },
+            qualifier: "",
+            scope: .weak
+        )
+        register(
+            AddTodoViewReactor.self,
+            resolver: {
+                let _0 = context.get(TodoService.self, qualifier: "")!
+                let _1 = context.get(ToastService.self, qualifier: "")!
+                return AddTodoViewReactor(_0, _1)
+            },
+            qualifier: "",
+            scope: .prototype
+        )
+        register(
             AppAnalytics.self,
             resolver: {
                 let parent = context.get(AnalyticsConfiguration.self, qualifier: "")!
@@ -31,6 +50,23 @@ final class DeliFactory: ModuleFactory {
             AnalyticsConfiguration.self,
             resolver: {
                 return AnalyticsConfiguration()
+            },
+            qualifier: "",
+            scope: .singleton
+        )
+        register(
+            Fabric.self,
+            resolver: {
+                let parent = context.get(FabricConfiguration.self, qualifier: "")!
+                return parent.fabric() as AnyObject
+            },
+            qualifier: "",
+            scope: .always
+        )
+        register(
+            FabricConfiguration.self,
+            resolver: {
+                return FabricConfiguration()
             },
             qualifier: "",
             scope: .singleton
@@ -98,32 +134,6 @@ final class DeliFactory: ModuleFactory {
             scope: .singleton
         )
         register(
-            SchedulerType.self,
-            resolver: {
-                let parent = context.get(RxSchedulerConfiguration.self, qualifier: "")!
-                return parent.realmScheduler() as AnyObject
-            },
-            qualifier: "realm",
-            scope: .singleton
-        )
-        register(
-            SchedulerType.self,
-            resolver: {
-                let parent = context.get(RxSchedulerConfiguration.self, qualifier: "")!
-                return parent.syncScheduler() as AnyObject
-            },
-            qualifier: "sync",
-            scope: .singleton
-        )
-        register(
-            RxSchedulerConfiguration.self,
-            resolver: {
-                return RxSchedulerConfiguration()
-            },
-            qualifier: "",
-            scope: .singleton
-        )
-        register(
             FirebaseTodoRepositoryImpl.self,
             resolver: {
                 let _0 = context.get(DatabaseReference.self, qualifier: "todo")!
@@ -133,32 +143,12 @@ final class DeliFactory: ModuleFactory {
             scope: .singleton
         ).link(TodoRepository.self)
         register(
-            MoreViewReactor.self,
-            resolver: {
-                let _0 = context.get(AuthService.self, qualifier: "")!
-                return MoreViewReactor(_0)
-            },
-            qualifier: "",
-            scope: .prototype
-        )
-        register(
             LoginViewController.self,
             resolver: {
                 let _0 = context.get(LoginViewReactor.self, qualifier: "")!
                 let _1 = context.get(AppAnalytics.self, qualifier: "")!
                 let _2 = context.get(Navigator.self, qualifier: "")!
                 return LoginViewController(_0, _1, _2)
-            },
-            qualifier: "",
-            scope: .weak
-        )
-        register(
-            MoreViewController.self,
-            resolver: {
-                let _0 = context.get(MoreViewReactor.self, qualifier: "")!
-                let _1 = context.get(Navigator.self, qualifier: "")!
-                let _2 = context.get(AppAnalytics.self, qualifier: "")!
-                return MoreViewController(_0, _1, _2)
             },
             qualifier: "",
             scope: .weak
@@ -192,6 +182,34 @@ final class DeliFactory: ModuleFactory {
             qualifier: "",
             scope: .prototype
         )
+        registerFactory(
+            MoreCellReactor.self,
+            resolver: { payload in
+                
+                return MoreCellReactor(payload: payload as! MoreCellPayload)
+            },
+            qualifier: ""
+        ).link(MoreCellReactor.self)
+        register(
+            MoreViewController.self,
+            resolver: {
+                let _0 = context.get(MoreViewReactor.self, qualifier: "")!
+                let _1 = context.get(Navigator.self, qualifier: "")!
+                let _2 = context.get(AppAnalytics.self, qualifier: "")!
+                return MoreViewController(_0, _1, _2)
+            },
+            qualifier: "",
+            scope: .weak
+        )
+        register(
+            MoreViewReactor.self,
+            resolver: {
+                let _0 = context.get(AuthService.self, qualifier: "")!
+                return MoreViewReactor(_0)
+            },
+            qualifier: "",
+            scope: .prototype
+        )
         register(
             DPLDeepLinkRouter.self,
             resolver: {
@@ -205,23 +223,6 @@ final class DeliFactory: ModuleFactory {
             NavigatorConfiguration.self,
             resolver: {
                 return NavigatorConfiguration()
-            },
-            qualifier: "",
-            scope: .singleton
-        )
-        register(
-            Fabric.self,
-            resolver: {
-                let parent = context.get(FabricConfiguration.self, qualifier: "")!
-                return parent.fabric() as AnyObject
-            },
-            qualifier: "",
-            scope: .always
-        )
-        register(
-            FabricConfiguration.self,
-            resolver: {
-                return FabricConfiguration()
             },
             qualifier: "",
             scope: .singleton
@@ -252,23 +253,6 @@ final class DeliFactory: ModuleFactory {
             qualifier: "",
             scope: .singleton
         )
-        registerFactory(
-            MoreCellReactor.self,
-            resolver: { payload in
-                
-                return MoreCellReactor(payload: payload as! MoreCellPayload)
-            },
-            qualifier: ""
-        ).link(MoreCellReactor.self)
-        register(
-            AddTodoViewController.self,
-            resolver: {
-                let _0 = context.get(AddTodoViewReactor.self, qualifier: "")!
-                return AddTodoViewController(_0)
-            },
-            qualifier: "",
-            scope: .weak
-        )
         register(
             RealmTodoRepositoryImpl.self,
             resolver: {
@@ -279,6 +263,32 @@ final class DeliFactory: ModuleFactory {
             qualifier: "local",
             scope: .singleton
         ).link(TodoRepository.self)
+        register(
+            SchedulerType.self,
+            resolver: {
+                let parent = context.get(RxSchedulerConfiguration.self, qualifier: "")!
+                return parent.realmScheduler() as AnyObject
+            },
+            qualifier: "realm",
+            scope: .singleton
+        )
+        register(
+            SchedulerType.self,
+            resolver: {
+                let parent = context.get(RxSchedulerConfiguration.self, qualifier: "")!
+                return parent.syncScheduler() as AnyObject
+            },
+            qualifier: "sync",
+            scope: .singleton
+        )
+        register(
+            RxSchedulerConfiguration.self,
+            resolver: {
+                return RxSchedulerConfiguration()
+            },
+            qualifier: "",
+            scope: .singleton
+        )
         register(
             SignUpViewController.self,
             resolver: {
@@ -328,6 +338,14 @@ final class DeliFactory: ModuleFactory {
             qualifier: "",
             scope: .singleton
         ).link(ToastService.self)
+        registerFactory(
+            ToastView.self,
+            resolver: { payload in
+                
+                return ToastView(payload: payload as! ToastPayload)
+            },
+            qualifier: ""
+        ).link(ToastView.self)
         register(
             ToastViewController.self,
             resolver: {
@@ -355,16 +373,6 @@ final class DeliFactory: ModuleFactory {
             qualifier: ""
         ).link(TodoCellReactor.self)
         register(
-            AddTodoViewReactor.self,
-            resolver: {
-                let _0 = context.get(TodoService.self, qualifier: "")!
-                let _1 = context.get(ToastService.self, qualifier: "")!
-                return AddTodoViewReactor(_0, _1)
-            },
-            qualifier: "",
-            scope: .prototype
-        )
-        register(
             TodoServiceImpl.self,
             resolver: {
                 let _0 = context.get(TodoRepository.self, qualifier: "local")!
@@ -386,14 +394,6 @@ final class DeliFactory: ModuleFactory {
             qualifier: "todo",
             scope: .always
         )
-        registerFactory(
-            ToastView.self,
-            resolver: { payload in
-                
-                return ToastView(payload: payload as! ToastPayload)
-            },
-            qualifier: ""
-        ).link(ToastView.self)
         register(
             TodoViewController.self,
             resolver: {

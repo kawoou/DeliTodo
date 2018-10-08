@@ -54,6 +54,7 @@ final class TodoServiceImpl: TodoService, Autowired {
             return .error(TodoServiceError.userNotFound)
         }
         return todoRepository.gets(for: user)
+            .catchErrorJustReturn([])
     }
 
     func observe(id: String) -> Observable<Todo?> {
@@ -67,6 +68,7 @@ final class TodoServiceImpl: TodoService, Autowired {
             return .error(TodoServiceError.userNotFound)
         }
         return todoRepository.observes(for: user)
+            .catchErrorJustReturn([])
     }
 
     func insert(title: String) -> Single<String> {

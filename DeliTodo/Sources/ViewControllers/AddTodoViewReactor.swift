@@ -61,7 +61,7 @@ final class AddTodoViewReactor: Reactor, Autowired {
                     case let RxValidatorResult.notValidWithMessage(message):
                         self?.toastService.show(message, level: .normal)
                     default:
-                        break
+                        self?.toastService.show("Unknown error", level: .normal)
                     }
 
                     return .of(
