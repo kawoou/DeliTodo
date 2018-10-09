@@ -1,0 +1,33 @@
+osx_image: xcode10
+language: objective-c
+sudo: required
+branches:
+  only:
+  - master
+  - develop
+  - /^v[\d.]+$/
+  except:
+  - screenshot
+
+env:
+  global:
+  - WORKSPACE="DeliTodo.xcworkspace"
+  - SCHEME="DeliTodo"
+  matrix:
+  - DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=12.0"
+
+install:
+- gem install cocoapods
+
+before_script:
+- set -o pipefail
+- pod install --repo-update
+- carthage update --cache-builds --platform iOS
+
+script:
+- xcodebuild clean build test
+    -workspace "$WORKSPACE"
+    -scheme "$SCHEME"
+    -destination "$DESTINATION"
+    -configuration Debug
+    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c

@@ -285,6 +285,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		058EA9288D015FBABA117F7EB298BC13 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B31E7E0C5F9E5E5D8F0506821EF3B /* MockTodoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		08A9EFB642FCF610CE63A79E74E84307 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +331,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		176864262FDCB78C8CFB99ED64D8C46D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF606E9169291AF9736EA5BBF9A472 /* ToastServiceSpec.swift */,
+				E96B7B08886D4AAC9381859B251A47F4 /* TodoServiceSpec.swift */,
+				B408C7BEB6F3E3644CFC0FBD73EB5ABA /* TodoSyncServiceSpec.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		19BEA8DF21F636406F2ACFF98F8E0FDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +349,25 @@
 				E5B8EE2712283554E6A42641E79F8C12 /* Settings.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A5C9197C54D7C6BC7F3C20A5A3539FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED31C7C9F8B147644EF754670184241C /* MockAuthService.swift */,
+				E8596F4913E4F16892B4F3A6B640B91C /* MockToastService.swift */,
+				CFFE115215C00086F4072C69AA07BE82 /* MockTodoService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1FDC7333A28772F19036D3E838472D6F /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				12ABE1F2BC2D8FD8835DC32F78A4692B /* DummyTodo.swift */,
+				CE90508DB1E879F6F8D6E968DAC41FBF /* DummyUser.swift */,
+			);
+			path = Dummies;
 			sourceTree = "<group>";
 		};
 		2313C352E778329C733144B7B5BFB92F /* Views */ = {
@@ -379,7 +416,6 @@
 				3DA905142B21291BCAF9E7758390F3AA /* Repositories */,
 				8BA377F5C868B087079B817AEDB15100 /* Sections */,
 				815EFCCBF77A18A0AB3E6F269C147629 /* Services */,
-				947D9FA3BA99821A3636D434F3FEF807 /* Types */,
 				327FCBF762B67E48E544184AF095AAC6 /* ViewControllers */,
 				2313C352E778329C733144B7B5BFB92F /* Views */,
 				BEF670BD0549B70E9881EB389FEC98DA /* AppDelegate.swift */,
@@ -396,6 +432,25 @@
 				4B8FA6F3C40A67582F3E368C181619DF /* TodoRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		426E2C8DF5AFC77BC3517567390D7D46 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				6BE6B0B5BD0DFFEC60027550F124B4DF /* MockAnalyticsProvider.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		4596369A8DF87631DE83C733F38F2FD0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9F13B64517AFD5C0586B3894948ECF0C /* Cores */,
+				FA84FF8F0E74D37E99CFD4F1B6170168 /* Errors */,
+				058EA9288D015FBABA117F7EB298BC13 /* Repositories */,
+				1A5C9197C54D7C6BC7F3C20A5A3539FF /* Services */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		48726E8D69F372DD880B8E794501EF9B /* Models */ = {
@@ -432,6 +487,18 @@
 			);
 			sourceTree = "<group>";
 		};
+		5E62D75F6E7263588FF98A4B39C2D4F3 /* Reactors */ = {
+			isa = PBXGroup;
+			children = (
+				A9B660B0EC9330B7C22305ABD3C868C8 /* AddTodoViewReactorSpec.swift */,
+				F8324FA17B3271050E8A4C0A662E7533 /* LoginViewReactorSpec.swift */,
+				7B226FD5F0C4D346BAF307022E4240F7 /* MainNavigationViewReactorSpec.swift */,
+				0B1F25E770D0FB8E7BF326A58744FE00 /* SignUpViewReactorSpec.swift */,
+				49941179A1380B85E29FBFA9EF4AC280 /* SplashViewReactorSpec.swift */,
+			);
+			path = Reactors;
+			sourceTree = "<group>";
+		};
 		6278E1AE771170D504A9C1788A836CF9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,13 +506,6 @@
 				6835A9E050DBB4DE7AEE4C8491C12750 /* UIColor+Image.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		6C3B687CE6BB96B88B4C29D08F2C77F6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		723A504F393A6016EA6F235D881C2C28 /* Logging */ = {
@@ -477,13 +537,6 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
-		947D9FA3BA99821A3636D434F3FEF807 /* Types */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Types;
-			sourceTree = "<group>";
-		};
 		9602F295B66F748FE686117F95B470DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,89 +557,6 @@
 			path = Rx;
 			sourceTree = "<group>";
 		};
-		5E62D75F6E7263588FF98A4B39C2D4F3 /* Reactors */ = {
-			isa = PBXGroup;
-			children = (
-				A9B660B0EC9330B7C22305ABD3C868C8 /* AddTodoViewReactorSpec.swift */,
-				F8324FA17B3271050E8A4C0A662E7533 /* LoginViewReactorSpec.swift */,
-				7B226FD5F0C4D346BAF307022E4240F7 /* MainNavigationViewReactorSpec.swift */,
-				0B1F25E770D0FB8E7BF326A58744FE00 /* SignUpViewReactorSpec.swift */,
-				49941179A1380B85E29FBFA9EF4AC280 /* SplashViewReactorSpec.swift */,
-			);
-			path = Reactors;
-			sourceTree = "<group>";
-		};
-		589FE3204A65860B3B2D06B9F5FE6F75 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		176864262FDCB78C8CFB99ED64D8C46D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				D2CF606E9169291AF9736EA5BBF9A472 /* ToastServiceSpec.swift */,
-				E96B7B08886D4AAC9381859B251A47F4 /* TodoServiceSpec.swift */,
-				B408C7BEB6F3E3644CFC0FBD73EB5ABA /* TodoSyncServiceSpec.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4596369A8DF87631DE83C733F38F2FD0 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				9F13B64517AFD5C0586B3894948ECF0C /* Cores */,
-				FA84FF8F0E74D37E99CFD4F1B6170168 /* Errors */,
-				058EA9288D015FBABA117F7EB298BC13 /* Repositories */,
-				1A5C9197C54D7C6BC7F3C20A5A3539FF /* Services */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		E7BC07C02B2E4B0971EA8701BDA26A60 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				3B846C787FD0EFB5354854D68FD2DDAA /* DeliConfiguration.swift */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		1A5C9197C54D7C6BC7F3C20A5A3539FF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				ED31C7C9F8B147644EF754670184241C /* MockAuthService.swift */,
-				E8596F4913E4F16892B4F3A6B640B91C /* MockToastService.swift */,
-				CFFE115215C00086F4072C69AA07BE82 /* MockTodoService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		058EA9288D015FBABA117F7EB298BC13 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				BE4B31E7E0C5F9E5E5D8F0506821EF3B /* MockTodoRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		FA84FF8F0E74D37E99CFD4F1B6170168 /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				CCACD887886C4F0B8EB22D8FB7641A97 /* MockError.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		1FDC7333A28772F19036D3E838472D6F /* Dummies */ = {
-			isa = PBXGroup;
-			children = (
-				12ABE1F2BC2D8FD8835DC32F78A4692B /* DummyTodo.swift */,
-				CE90508DB1E879F6F8D6E968DAC41FBF /* DummyUser.swift */,
-			);
-			path = Dummies;
-			sourceTree = "<group>";
-		};
 		9F13B64517AFD5C0586B3894948ECF0C /* Cores */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,18 +565,9 @@
 			path = Cores;
 			sourceTree = "<group>";
 		};
-		426E2C8DF5AFC77BC3517567390D7D46 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				6BE6B0B5BD0DFFEC60027550F124B4DF /* MockAnalyticsProvider.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
 		9FAD323E6C7030D73D131490BD3A4C3A /* DeliTodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6C3B687CE6BB96B88B4C29D08F2C77F6 /* Resources */,
 				D26C0202CDEE2D426E711978C4E4CEEB /* Sources */,
 				152B86E344200C2A6E5E8966946FB006 /* Supporting Files */,
 			);
@@ -667,7 +628,6 @@
 				1FDC7333A28772F19036D3E838472D6F /* Dummies */,
 				4596369A8DF87631DE83C733F38F2FD0 /* Mocks */,
 				5E62D75F6E7263588FF98A4B39C2D4F3 /* Reactors */,
-				589FE3204A65860B3B2D06B9F5FE6F75 /* Repositories */,
 				176864262FDCB78C8CFB99ED64D8C46D /* Services */,
 				0C5ADC55A9087DCF0D8AC228EFD0826E /* TestMain.swift */,
 			);
@@ -704,6 +664,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7BC07C02B2E4B0971EA8701BDA26A60 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3B846C787FD0EFB5354854D68FD2DDAA /* DeliConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		F383B0D5A079266D8E1BF16E404C03B2 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +698,14 @@
 				A2ADE3C00ABE116E1CA61E051A3CA20F /* RealmTodoRepositoryImpl.swift */,
 			);
 			path = Impl;
+			sourceTree = "<group>";
+		};
+		FA84FF8F0E74D37E99CFD4F1B6170168 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CCACD887886C4F0B8EB22D8FB7641A97 /* MockError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
