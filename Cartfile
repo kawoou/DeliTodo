@@ -8,7 +8,8 @@ github "RxSwiftCommunity/RxDataSources"
 github "kawoou/RxValidator" "94750bdcd89b8d2f84682c949f6893b0d44a37e1"
 
 # Database
-github "realm/realm-cocoa"
+binary "https://github.com/kawoou/DeliTodo/raw/realm/Realm"
+#github "realm/realm-cocoa"
 
 # Logging
 github "SwiftyBeaver/SwiftyBeaver"
