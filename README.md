@@ -2,12 +2,7 @@ DeliTodo
 =======
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![CI Status](https://travis-ci.org/kawoou/DeliTodo.svg?branch=master)](https://travis-ci.org/kawoou/DeliTodo)
-
-<p align="center">
-<a href="#"><img src="https://img.shields.io/badge/Swift-4.2-orange.svg" alt="Swift"/></a>
-<a href="https://travis-ci.org/kawoou/DeliTodo"><img src="https://travis-ci.org/kawoou/DeliTodo.svg?branch=master" alt="CI Status"/></a>
-<a href="https://codecov.io/gh/kawoou/DeliTodo"><img src="https://img.shields.io/codecov/c/github/kawoou/DeliTodo.svg" alt="Codecov"/></a>
-</p>
+[![Codecov](https://img.shields.io/codecov/c/github/kawoou/DeliTodo.svg)](https://codecov.io/gh/kawoou/DeliTodo)
 
 Todo application for iOS using [Deli](https://github.com/kawoou/Deli).
 
