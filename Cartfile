@@ -2,9 +2,9 @@
 binary "https://kawoou.kr/ReactorKit-Carthage/ReactorKit-Static"
 
 # Rx
-github "ReactiveX/RxSwift"
-github "RxSwiftCommunity/RxOptional"
-github "RxSwiftCommunity/RxDataSources"
+github "ReactiveX/RxSwift" "4.3.1"
+github "RxSwiftCommunity/RxOptional" "3.5.0"
+github "RxSwiftCommunity/RxDataSources" "3.1.0"
 github "kawoou/RxValidator" "94750bdcd89b8d2f84682c949f6893b0d44a37e1"
 
 # Database
@@ -12,18 +12,18 @@ binary "https://github.com/kawoou/DeliTodo/raw/realm/Realm"
 #github "realm/realm-cocoa"
 
 # Logging
-github "SwiftyBeaver/SwiftyBeaver"
+github "SwiftyBeaver/SwiftyBeaver" "1.6.1"
 
 # Deeplink
-github "button/DeepLinkKit"
+github "button/DeepLinkKit" "1.5.0"
 
 # UI
-github "SnapKit/SnapKit"
-github "cruisediary/Gradients"
-github "raulriera/TextFieldEffects"
-github "SwipeCellKit/SwipeCellKit"
-github "Daltron/NotificationBanner"
+github "SnapKit/SnapKit" "4.0.1"
+github "cruisediary/Gradients" "0.1.4"
+github "raulriera/TextFieldEffects" "1.5.0"
+github "SwipeCellKit/SwipeCellKit" "2.5.0"
+github "Daltron/NotificationBanner" "1.7.3"
 
 # Test
-github "Quick/Quick"
-github "Quick/Nimble"
+github "Quick/Quick" "v1.3.2"
+github "Quick/Nimble" "v7.3.1"
