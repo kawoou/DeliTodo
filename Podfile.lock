@@ -70,18 +70,18 @@ PODS:
     - Umbrella/Core
 
 DEPENDENCIES:
-  - Crashlytics
-  - Deli
-  - Fabric
-  - FirebaseAnalytics
-  - FirebaseAuth
-  - FirebaseCore
-  - FirebaseDatabase
-  - LicensePlist
-  - SwiftGen
-  - SwiftLint
-  - Umbrella
-  - Umbrella/Firebase
+  - Crashlytics (= 3.10.9)
+  - Deli (= 0.6.0)
+  - Fabric (= 1.7.13)
+  - FirebaseAnalytics (= 5.2.0)
+  - FirebaseAuth (= 5.0.4)
+  - FirebaseCore (= 5.1.4)
+  - FirebaseDatabase (= 5.0.3)
+  - LicensePlist (= 1.8.8)
+  - SwiftGen (= 6.0.1)
+  - SwiftLint (= 0.27.0)
+  - Umbrella (= 0.7.1)
+  - Umbrella/Firebase (= 0.7.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -126,6 +126,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Umbrella: 90c8dea533add4a072dfd48fbc3a53f62c6e0716
 
-PODFILE CHECKSUM: 5582234720b4452eba5b15a6a3ec0452b7b5cdbe
+PODFILE CHECKSUM: 358e36c4c56e31f25cc30e730aab9bcc83f581c0
 
 COCOAPODS: 1.6.0.beta.1
