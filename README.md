@@ -102,5 +102,5 @@ If you want to contribute, [submit a pull request](https://github.com/kawoou/Del
 
 ## License
 
-Deli is under MIT license. See the [LICENSE](https://github.com/kawoou/DeliTodo/blob/master/LICENSE) file for more info.
+DeliTodo is under MIT license. See the [LICENSE](https://github.com/kawoou/DeliTodo/blob/master/LICENSE) file for more info.
 
